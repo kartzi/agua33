@@ -1,0 +1,143 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3aa5dc;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    /* Remova min-height e height */
+}
+
+h1 {
+    color: #3aa5dc;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #3aa5dc;
+}
+
+input, select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+button {
+    background-color: #3aa5dc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e85b5;
+}
+
+hr {
+    border: 0.5px solid #3aa5dc;
+    margin: 20px 0;
+}
+
+.meta-section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#metaDiaria {
+    color: #3aa5dc;
+    font-weight: bold;
+}
+
+#resultado {
+    color: #3aa5dc;
+    font-weight: bold;
+}
+
+/* Novo estilo para a seção de registros de consumo */
+.consumo-registros {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #333;
+    /* Remova max-height */
+}
+
+/* Estilo para a lista de registros */
+#listaRegistros {
+    list-style: none;
+    padding: 0;
+}
+
+#listaRegistros li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    color: #333;  /* Cor do texto ajustada para torná-lo mais legível */
+    max-height: 80vh; /* ou ajuste conforme necessário */
+}
+
+/* Estilo para o botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

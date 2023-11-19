@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Água</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Consumo de Água</h1>
+        
+        <div class="input-section">
+            <label for="idade">Sua idade:</label>
+            <input type="number" id="idade" placeholder="Informe sua idade">
+        </div>
+
+        <div class="input-section">
+            <label for="peso">Seu peso (em kg):</label>
+            <input type="number" id="peso" placeholder="Informe seu peso">
+        </div>
+
+        <button onclick="calcularMeta()">Calcular Meta Diária</button>
+
+        <div class="meta-section" id="metaSection">
+            <p>Sua meta diária é de <span id="metaDiaria"></span> ml de água.</p>
+        </div>
+
+        <hr>
+
+        <div class="input-section">
+            <label for="consumo">Quantidade de água consumida (em ml):</label>
+            <input type="number" id="consumo" placeholder="Informe a quantidade consumida">
+        </div>
+
+        <div class="input-section">
+            <label for="horario">Horário do consumo:</label>
+            <input type="time" id="horario">
+        </div>
+
+        <button onclick="registrarConsumo()">Registrar Consumo</button>
+
+        <p id="resultado">Você atingiu X% da sua meta diária.</p>
+
+        <!-- Adicione um novo campo para exibir os registros de consumo -->
+        <div class="consumo-registros" id="consumoRegistros">
+            <h2>Registros de Consumo</h2>
+            <ul id="listaRegistros"></ul>
+        </div>
+
+        <!-- Adicione um botão para abrir a janela de informações -->
+        <button id="btnInfo" onclick="exibirInformacoes()">Informações do Grupo</button>
+    </div>
+
+    <!-- Adicione um modal para exibir as informações -->
+    <div id="modalInfo" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharInformacoes()">&times;</span>
+            <h2>Informações do Grupo</h2>
+            <p>Este projeto foi desenvolvido pelo grupo de alunos da Unijorge do curso de Enfermagem.</p>
+            <p>Integrantes do Grupo:</p>
+            <ul>
+                <li>[Geferson Gonçalves dos Santos]</li>
+                <li>[Alissa Lurdielle Barbosa Tomaz]</li>
+                <li>[Larissa Amorim]</li>
+                <li>[Maria Vitória Almeida Souza]</li>
+                <li>[Vivian Neves Oliveira Moura]</li>
+                <li>[Sabrina leite dos Santos]</li>
+                <li>[zzz]</li>
+                <li>[zzz]</li>
+                <!-- Adicione os nomes dos integrantes do grupo conforme necessário -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
